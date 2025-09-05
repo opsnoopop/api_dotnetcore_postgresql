@@ -23,7 +23,7 @@ builder.Services.AddSingleton(dataSource);
 
 var app = builder.Build();
 
-app.MapGet("/", () => Results.Json(new { message = "Hello World from .NET" }));
+app.MapGet("/", () => Results.Json(new { message = "Hello World from .NET (PostgreSQL)" }));
 
 // POST /users { username, email }
 app.MapPost("/users", async (NpgsqlDataSource ds, User payload) =>
