@@ -8,4 +8,6 @@ docker-compose.yml
 k6/
 postgresql/
 postgresql_initdb/
-test*.sh
+sysbench/
+wrk/
+*.sh
